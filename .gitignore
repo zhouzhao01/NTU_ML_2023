@@ -1,12 +1,15 @@
 HW1/runs/
 HW1/models/
+HW1/.ipynb_checkpoints
 
 HW2/runs/
 HW2/libriphone/
 HW2/model.ckpt
+HW2/.ipynb_checkpoints
 
 HW3/test/
 HW3/train/
 HW3/valid/
 HW3/sample_best.ckpt
 HW3/submission.csv
+HW3/.ipynb_checkpoints

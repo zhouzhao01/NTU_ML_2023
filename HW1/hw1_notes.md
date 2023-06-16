@@ -1,4 +1,8 @@
 # Model: DNN
+
+kaggle competitions submit -c ml2023spring-hw1 -f pred.csv -m "Message"
+
+
 ```python
 #!/usr/bin/env python3
 
@@ -110,7 +114,5 @@ test score: 0.83966
 加上 BatchNorm
 The Valid loss of best model:0.9136309226353964
 
-
-
-
-
+维数变大
+test score: 0.81863

@@ -97,17 +97,18 @@ class My_Model(nn.Module):
 
         self.fc = nn.Sequential(
             # nn.BatchNorm1d(input_dim),
-
             nn.Linear(input_dim, 128),
             nn.ReLU(),
-            nn.Linear(128, 16),
+            nn.Linear(128, 64),
             nn.ReLU(),
-            nn.Linear(16,8),
+            nn.Linear(64,8),
             nn.ReLU(),
             nn.Linear(8,4),
             nn.ReLU(),
             nn.Linear(4,1)
         )
+
+        #  为什么简单的模型比 DNN 的效果好?
 
     def forward(self, x):
         x = self.fc(x)
