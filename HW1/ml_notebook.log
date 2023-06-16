@@ -1,0 +1,168 @@
+[2023-04-25 18:37:37,163] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:37:48,372] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:37:54,186] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:38:08,574] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:38:19,722] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:38:36,597] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:44:43,277] ml_logger {ML2023Spring_HW1.py:48} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:44:53,861] ml_logger {ML2023Spring_HW1.py:48} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:44:57,183] ml_logger {ML2023Spring_HW1.py:48} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:46:18,266] ml_logger {ML2023Spring_HW1.py:46} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:46:37,166] ml_logger {ML2023Spring_HW1.py:46} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:46:41,891] ml_logger {ML2023Spring_HW1.py:46} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:46:46,740] ml_logger {ML2023Spring_HW1.py:46} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:46:58,407] ml_logger {ML2023Spring_HW1.py:46} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:47:32,696] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-25 18:47:33,412] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-04-25 18:47:33,413] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-04-25 18:47:33,413] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-04-26 13:46:29,627] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-26 13:46:29,812] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-04-26 13:46:29,812] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-04-26 13:46:29,812] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-04-26 14:14:17,080] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-26 14:14:17,262] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-04-26 14:14:17,262] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-04-26 14:14:17,263] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-04-26 14:45:06,583] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-26 14:45:06,763] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-04-26 14:45:06,764] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-04-26 14:45:06,764] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-04-26 15:29:25,896] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-26 15:29:26,175] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-04-26 15:29:26,175] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-04-26 15:29:26,175] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-04-26 15:34:24,600] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-04-26 15:34:24,785] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-04-26 15:34:24,785] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-04-26 15:34:24,785] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 11:26:40,755] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 11:38:40,941] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 11:38:41,673] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 11:38:41,675] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 11:38:41,676] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 11:59:01,748] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 11:59:02,181] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 11:59:02,181] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 11:59:02,182] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 11:59:44,780] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 11:59:45,225] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 11:59:45,225] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 11:59:45,226] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 12:02:19,000] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 12:02:19,428] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 12:02:19,429] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 12:02:19,429] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 12:02:53,483] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 12:24:15,465] ml_logger {2141567160.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 12:24:15,890] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 12:24:15,891] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 12:24:15,892] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 12:29:51,167] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 12:29:51,341] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 12:29:51,341] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 12:29:51,341] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 12:40:27,299] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 12:40:27,459] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 12:40:27,459] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 12:40:27,459] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 12:47:24,955] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 12:47:25,126] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 12:47:25,126] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 12:47:25,126] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 12:55:30,572] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 12:55:30,745] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 12:55:30,745] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 12:55:30,745] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 12:56:52,934] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 12:56:53,096] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 12:56:53,096] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 12:56:53,096] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 12:59:05,006] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 12:59:05,167] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 12:59:05,167] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 12:59:05,167] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 13:02:56,113] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 13:02:56,283] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 13:02:56,283] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 13:02:56,283] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 13:06:18,974] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 13:06:19,140] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 13:06:19,140] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 13:06:19,140] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 13:08:31,878] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 13:08:32,048] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 13:08:32,048] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 13:08:32,048] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 13:12:51,918] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 13:12:52,094] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 13:12:52,094] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 13:12:52,094] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 13:19:05,780] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 13:19:05,947] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 13:19:05,947] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 13:19:05,947] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 13:37:33,481] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 13:37:33,643] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 13:37:33,643] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 13:37:33,643] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 13:39:12,738] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 13:39:12,901] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 13:39:12,901] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 13:39:12,901] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 13:46:50,714] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 13:46:50,886] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 13:46:50,886] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 13:46:50,886] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 13:53:34,972] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 13:53:35,136] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 13:53:35,136] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 13:53:35,136] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 13:57:01,683] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 13:57:01,846] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 13:57:01,846] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 13:57:01,846] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 14:20:39,919] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 14:20:40,103] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 14:20:40,103] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 14:20:40,103] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 14:22:46,930] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 14:22:47,101] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 14:22:47,101] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 14:22:47,101] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 14:23:35,873] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 14:23:36,058] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 14:23:36,059] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 14:23:36,059] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 14:28:34,362] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 14:28:34,527] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 14:28:34,527] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 14:28:34,527] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 14:33:48,408] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 14:33:48,570] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 14:33:48,570] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 14:33:48,570] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 15:48:14,394] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 15:48:14,588] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 15:48:14,589] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 15:48:14,589] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 15:48:44,924] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 15:48:45,087] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 15:48:45,087] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 15:48:45,087] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 15:51:05,969] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 15:51:06,132] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 15:51:06,132] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 15:51:06,132] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 15:59:04,835] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 15:59:05,007] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 15:59:05,007] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 15:59:05,025] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 16:02:02,261] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 16:02:02,424] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 16:02:02,424] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 16:02:02,424] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
+[2023-06-15 16:06:54,809] ml_logger {ML2023Spring_HW1.py:28} INFO - ### Init. Logger ml_logger ###
+[2023-06-15 16:06:54,977] numexpr.utils {utils.py:145} INFO - Note: detected 80 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+[2023-06-15 16:06:54,977] numexpr.utils {utils.py:148} INFO - Note: NumExpr detected 80 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-15 16:06:54,977] numexpr.utils {utils.py:160} INFO - NumExpr defaulting to 8 threads.
