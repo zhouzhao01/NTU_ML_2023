@@ -30,5 +30,8 @@ class RNN_sequence_level(nn.Module):
 crop_length = 31
 Private Score = 0.79761
 
+# TODO 
+1. CosineAnnealingLR策略
+2. 标签平滑正则化
 
 
