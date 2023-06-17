@@ -28,5 +28,7 @@ class RNN_sequence_level(nn.Module):
 
 ## iter 1
 crop_length = 31
+Private Score = 0.79761
+
 
 
