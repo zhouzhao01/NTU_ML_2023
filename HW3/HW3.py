@@ -1,5 +1,6 @@
 _exp_name = "sample"
 
+# %%
 # Import necessary packages.
 import numpy as np
 import pandas as pd
@@ -14,15 +15,8 @@ from torchvision.datasets import DatasetFolder, VisionDataset
 # This is for the progress bar.
 from tqdm.auto import tqdm
 import random
-# This is for Q2
-import torch
-import numpy as np
-from sklearn.manifold import TSNE
-import matplotlib.pyplot as plt
-from tqdm import tqdm
-import matplotlib.cm as cm
-import torch.nn as nn
 
+# %%
 myseed = 6666  # set a random seed for reproducibility
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
@@ -31,7 +25,13 @@ torch.manual_seed(myseed)
 if torch.cuda.is_available():
     torch.cuda.manual_seed_all(myseed)
 
-## Transforms 
+# %% [markdown]
+# # Transforms
+# Torchvision provides lots of useful utilities for image preprocessing, data *wrapping* as well as data augmentation.
+# 
+# Please refer to PyTorch official website for details about different transforms.
+
+# %%
 # Normally, We don't need augmentations in testing and validation.
 # All we need here is to resize the PIL image and transform it into Tensor.
 test_tfm = transforms.Compose([
@@ -45,15 +45,21 @@ train_tfm = transforms.Compose([
     # Resize the image into a fixed shape (height = width = 128)
     transforms.Resize((128, 128)),
     # You may add some transforms here.
-    
+    transforms.ColorJitter(),
+    transforms.RandomRotation(degrees=(-90,90)),
     # ToTensor() should be the last one of the transforms.
     transforms.ToTensor(),
 ])
 
-## Datasets
+
+# %% [markdown]
+# # Datasets
+# The data is labelled by the name, so we load images and label while calling '__getitem__'
+
+# %%
 class FoodDataset(Dataset):
 
-    def __init__(self,path,tfm=test_tfm,files = None):
+    def __init__(self,path,tfm=test_tfm,files = None, num_class=11):
         super(FoodDataset).__init__()
         self.path = path
         self.files = sorted([os.path.join(path,x) for x in os.listdir(path) if x.endswith(".jpg")])
@@ -69,16 +75,22 @@ class FoodDataset(Dataset):
         fname = self.files[idx]
         im = Image.open(fname)
         im = self.transform(im)
+
+        # one_hot_label = torch.zeros(self.num_class)
         
         try:
             label = int(fname.split("/")[-1].split("_")[0])
+
         except:
             label = -1 # test has no label
             
         return im,label
 
-## Model
-class Classifier(nn.Module):
+# %% [markdown]
+# # Model
+
+# %%
+class Classifier(nn.Module): # use softmax
     def __init__(self):
         super(Classifier, self).__init__()
         # torch.nn.Conv2d(in_channels, out_channels, kernel_size, stride, padding)
@@ -105,36 +117,74 @@ class Classifier(nn.Module):
             nn.ReLU(),
             nn.MaxPool2d(2, 2, 0),       # [512, 8, 8]
             
-            nn.Conv2d(512, 512, 3, 1, 1), # [512, 8, 8]
-            nn.BatchNorm2d(512),
+            nn.Conv2d(512, 1024, 3, 1, 1), # [512, 8, 8]
+            nn.BatchNorm2d(1024),
             nn.ReLU(),
-            nn.MaxPool2d(2, 2, 0),       # [512, 4, 4]
+            nn.MaxPool2d(2, 2, 0),       # [1024, 4, 4]
         )
         self.fc = nn.Sequential(
-            nn.Linear(512*4*4, 1024),
+            nn.Linear(1024*4*4, 1024*4),
             nn.ReLU(),
+
+            nn.Linear(1024*4, 1024),
+            nn.ReLU(),
+
             nn.Linear(1024, 512),
             nn.ReLU(),
-            nn.Linear(512, 11)
+
+            nn.Linear(512, 256),
+            nn.ReLU(),
+
+            nn.Linear(256,11),
+            nn.ReLU(),
         )
 
     def forward(self, x):
         out = self.cnn(x)
-        out = out.view(out.size()[0], -1)
-        return self.fc(out)
+        # print(out.size())
 
-## Configurations
-# "cuda" only when GPUs are available.
+        out = out.view(out.size()[0], -1)
+        # print(out.size())
+        
+        out = self.fc(out)
+        # print(out.size())
+        return out
+
+# %%
+# test_X = torch.zeros(2,3,128,128)
+# model = Classifier()
+# test_y = model(test_X)
+
+# test_y
+
+
+# %% [markdown]
+# # Configurations
+
+# %%
+# # "cuda" only when GPUs are available.
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-# Initialize a model, and put it on the device specified.
-model = Classifier().to(device)
+# # Initialize a model, and put it on the device specified.
+# model = Classifier().to(device)
+
+# Initialize a model
+model = Classifier()
+
+# Check if multiple GPUs are available and if so, use them.
+if torch.cuda.is_available() and torch.cuda.device_count() > 1:
+    # print(f"Using {torch.cuda.device_count()} GPUs!")
+    # model = nn.DataParallel(model)
+    model = nn.DataParallel(model, device_ids=[0,2,3])
+
+# Put the model on the device
+model.to(device)
 
 # The number of batch size.
-batch_size = 64
+batch_size = 32  * 4 * 2 * 2
 
 # The number of training epochs.
-n_epochs = 8
+n_epochs = 100
 
 # If no improvement in 'patience' epochs, early stop.
 patience = 5
@@ -145,16 +195,21 @@ criterion = nn.CrossEntropyLoss()
 # Initialize optimizer, you may fine-tune some hyperparameters such as learning rate on your own.
 optimizer = torch.optim.Adam(model.parameters(), lr=0.0003, weight_decay=1e-5)
 
+# %% [markdown]
+# # Dataloader
 
-## Dataloader
+# %%
 # Construct train and valid datasets.
 # The argument "loader" tells how torchvision reads the data.
 train_set = FoodDataset("./train", tfm=train_tfm)
-train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True, num_workers=0, pin_memory=True)
+train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True, num_workers=4, pin_memory=True)
 valid_set = FoodDataset("./valid", tfm=test_tfm)
-valid_loader = DataLoader(valid_set, batch_size=batch_size, shuffle=True, num_workers=0, pin_memory=True)
+valid_loader = DataLoader(valid_set, batch_size=batch_size, shuffle=True, num_workers=4, pin_memory=True)
 
-## Start Traning
+# %% [markdown]
+# # Start Training
+
+# %%
 # Initialize trackers, these are not parameters and should not be changed
 stale = 0
 best_acc = 0
@@ -221,6 +276,7 @@ for epoch in range(n_epochs):
 
         # A batch consists of image data and corresponding labels.
         imgs, labels = batch
+        
         #imgs = imgs.half()
 
         # We don't need gradient in validation.
@@ -259,7 +315,8 @@ for epoch in range(n_epochs):
     # save models
     if valid_acc > best_acc:
         print(f"Best model found at epoch {epoch}, saving model")
-        torch.save(model.state_dict(), f"{_exp_name}_best.ckpt") # only save best to prevent output memory exceed error
+        torch.save(model.state_dict(), f"{_exp_name}_best.ckpt") 
+        # only save best to prevent output memory exceed error
         best_acc = valid_acc
         stale = 0
     else:
@@ -267,78 +324,3 @@ for epoch in range(n_epochs):
         if stale > patience:
             print(f"No improvment {patience} consecutive epochs, early stopping")
             break
-
-## Dataloader for test
-# Construct test datasets.
-# The argument "loader" tells how torchvision reads the data.
-test_set = FoodDataset("./test", tfm=test_tfm)
-test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=False, num_workers=0, pin_memory=True)
-
-## Testing and generate prediction CSV
-model_best = Classifier().to(device)
-model_best.load_state_dict(torch.load(f"{_exp_name}_best.ckpt"))
-model_best.eval()
-prediction = []
-with torch.no_grad():
-    for data,_ in tqdm(test_loader):
-        test_pred = model_best(data.to(device))
-        test_label = np.argmax(test_pred.cpu().data.numpy(), axis=1)
-        prediction += test_label.squeeze().tolist()
-
-# create test csv
-def pad4(i):
-    return "0"*(4-len(str(i)))+str(i)
-df = pd.DataFrame()
-df["Id"] = [pad4(i) for i in range(len(test_set))]
-df["Category"] = prediction
-df.to_csv("submission.csv",index = False)
-
-## Q1
-train_tfm = transforms.Compose([
-    # Resize the image into a fixed shape (height = width = 128)
-    transforms.Resize((128, 128)),
-    # You can add some transforms here.
-    transforms.ToTensor(),
-])
-
-## Q2
-
-
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
-
-# Load the trained model
-model = Classifier().to(device)
-state_dict = torch.load(f"{_exp_name}_best.ckpt")
-model.load_state_dict(state_dict)
-model.eval()
-
-print(model)
-# Load the vaildation set defined by TA
-valid_set = FoodDataset("./valid", tfm=test_tfm)
-valid_loader = DataLoader(valid_set, batch_size=64, shuffle=False, num_workers=0, pin_memory=True)
-
-# Extract the representations for the specific layer of model
-index =  5# You should find out the index of layer which is defined as "top" or 'mid' layer of your model.
-features = []
-labels = []
-for batch in tqdm(valid_loader):
-    imgs, lbls = batch
-    with torch.no_grad():
-        logits = model.cnn[:index](imgs.to(device))
-        logits = logits.view(logits.size()[0], -1)
-    labels.extend(lbls.cpu().numpy())
-    logits = np.squeeze(logits.cpu().numpy())
-    features.extend(logits)
-    
-features = np.array(features)
-colors_per_class = cm.rainbow(np.linspace(0, 1, 11))
-
-# Apply t-SNE to the features
-features_tsne = TSNE(n_components=2, init='pca', random_state=42).fit_transform(features)
-
-# Plot the t-SNE visualization
-plt.figure(figsize=(10, 8))
-for label in np.unique(labels):
-    plt.scatter(features_tsne[labels == label, 0], features_tsne[labels == label, 1], label=label, s=5)
-plt.legend()
-plt.show()
